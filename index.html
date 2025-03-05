@@ -1,0 +1,29 @@
+<!-- floating-svg-website/index.html -->
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating SVG with Language Support</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="language-selector">
+            <label for="language">Select Language:</label>
+            <select id="language">
+                <option value="en" selected>English</option>
+                <option value="hi">Hindi</option>
+                <option value="ko">Korean</option>
+                <option value="pa">Punjabi</option>
+            </select>
+        </div>
+        
+        <div id="svg-container">
+            <!-- SVG will be loaded here via JavaScript -->
+        </div>
+    </div>
+
+    <script src="js/languageSwitch.js"></script>
+    <script src="js/animation.js"></script>
+</body>
+</html>
