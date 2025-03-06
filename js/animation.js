@@ -30,9 +30,11 @@ document.addEventListener('DOMContentLoaded', function() {
             // Generate random position
             const newX = Math.max(0, Math.floor(Math.random() * maxX));
             const newY = Math.max(0, Math.floor(Math.random() * maxY));
+            const scaleNew = 1 + Math.random();
             
             // Apply new position
             svgContainer.style.transform = `translate(${newX}px, ${newY}px)`;
+            svgContainer.style.scale = scaleNew;
             
             // Schedule next movement
             setTimeout(animate, 5000); // Move every 5 seconds
